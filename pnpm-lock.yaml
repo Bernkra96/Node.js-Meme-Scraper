@@ -6,7 +6,7 @@ settings:
 
 dependencies:
   node-fetch:
-    specifier: '2'
+    specifier: ^2.7.0
     version: 2.7.0
 
 devDependencies:
