@@ -1,11 +1,11 @@
 {
   "name": "Node.js-Meme-Scraper",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "keywords": [],
   "license": "ISC",
   "author": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,8 @@
   "devDependencies": {
     "eslint-config-upleveled": "^5.0.4",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "node-fetch": "2"
   }
 }
