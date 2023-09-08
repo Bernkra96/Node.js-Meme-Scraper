@@ -6,3 +6,6 @@ memme
 .jpg
 .eslintcache
 *.tsbuildinfo
+
+.eslintcache
+*.tsbuildinfo
