@@ -5,18 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  image-downloader:
-    specifier: ^4.3.0
-    version: 4.3.0
   node-fetch:
     specifier: ^2.7.0
     version: 2.7.0
   smart-image-saver:
     specifier: ^1.0.2
     version: 1.0.2
-  world-downloader:
-    specifier: ^1.0.1
-    version: 1.0.1
 
 devDependencies:
   eslint-config-upleveled:
@@ -1645,16 +1639,6 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /follow-redirects@1.15.2:
-    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dev: false
-
   /for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
     dependencies:
@@ -1872,15 +1856,6 @@ packages:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
     dev: true
-
-  /image-downloader@4.3.0:
-    resolution: {integrity: sha512-UBioN0E+8zu8N0lLC6wkZmPA/MA1A3yx9B1whjy5O/YiOV9XrSxLLKi7JqLLj6knQ3n9N1OBoHFS7shp8sehBQ==}
-    engines: {node: '>=6.10.1'}
-    dependencies:
-      follow-redirects: 1.15.2
-    transitivePeerDependencies:
-      - debug
-    dev: false
 
   /import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -3219,14 +3194,6 @@ packages:
     dependencies:
       isexe: 2.0.0
     dev: true
-
-  /world-downloader@1.0.1:
-    resolution: {integrity: sha512-Odju/ZLaN6PDcKpw60F2otwmkplM0KrwybU6ycqfjiH7FIouKqiuBcmZpEvNzPgolcI0BlGUXywchhu/lhVhyQ==}
-    dependencies:
-      follow-redirects: 1.15.2
-    transitivePeerDependencies:
-      - debug
-    dev: false
 
   /wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
