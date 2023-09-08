@@ -5,7 +5,7 @@ import saveImage from 'smart-image-saver';
 // Crate folter
 
 const folderName = 'meme';
-var filename = 'image01';
+var filename = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'];
 
 try {
   fs.rmSync('/meme', { recursive: true });
@@ -29,8 +29,10 @@ let urls = body.match(re);
 //console.log(urls[4].slice(10, -14));
 ///console.log(urls[6].slice(10, -14));
 
-await saveImage({
-  url: urls[0].slice(10, -14),
-  path: 'meme/image.jpg',
-  name: 'example',
-});
+for (let i = 0; i < 10; i++) {
+  await saveImage({
+    url: urls[i].slice(10, -14),
+    path: 'meme/image.jpg',
+    name: filename[i],
+  });
+}
