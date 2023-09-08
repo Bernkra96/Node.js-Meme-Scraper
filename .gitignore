@@ -3,6 +3,6 @@ npm-debug.log*
 .DS_Store
 .png
 memme
-
+.jpg
 .eslintcache
 *.tsbuildinfo
