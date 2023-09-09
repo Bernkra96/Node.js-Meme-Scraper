@@ -1,6 +1,5 @@
-import fs from 'fs';
+import fs from 'node:fs';
 import fetch from 'node-fetch';
-import saveImage from 'smart-image-saver';
 
 // Crate folter
 
@@ -19,10 +18,4 @@ const body = await response.text();
 const re = /<img.*\/>/gm;
 const urls = body.match(re);
 
-for (let i = 0; i < 10; i++) {
-  await saveImage({
-    url: urls[i].slice(10, -14),
-    path: 'meme/image.jpg',
-    name: filename[i],
-  });
-}
+for (let i = 0; i < 10; i++) {}
