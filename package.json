@@ -15,7 +15,6 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "node-fetch": "^2.7.0",
-    "smart-image-saver": "^1.0.2"
+    "node-fetch": "^2.7.0"
   }
 }
