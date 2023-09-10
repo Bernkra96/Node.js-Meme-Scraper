@@ -18,11 +18,15 @@ const response = await fetch(
 const body = await response.text();
 const re = /<img.*\/>/gm;
 const urls = body.match(re);
+const sliceFront = 10;
+const sliceBack = -4;
+
+console.log(urls[0]);
 
 // Downloaded Image from URl
 for (let i = 0; i < 10; i++) {
   https
-    .get(urls[i].slice(10, -14), (res) => {
+    .get(urls[i].slice(sliceFront, sliceBack), (res) => {
       const imagePath = './memes/' + filename[i] + '.jpg';
       const stream = fs.createWriteStream(imagePath);
 
@@ -30,7 +34,7 @@ for (let i = 0; i < 10; i++) {
 
       stream.on('finish', () => {
         stream.close();
-        console.log(urls[i].slice(10, -14));
+        console.log(urls[i].slice(sliceFront, sliceBack));
 
         console.log('Image downloaded ');
       });
