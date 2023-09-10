@@ -22,7 +22,7 @@ const urls = body.match(re);
 // Downloaded Image from URl
 for (let i = 0; i < 10; i++) {
   https
-    .get(urls[i].slice(10, -15), (res) => {
+    .get(urls[i].slice(10, -14), (res) => {
       const imagePath = './memes/' + filename[i] + '.jpg';
       const stream = fs.createWriteStream(imagePath);
 
@@ -30,7 +30,7 @@ for (let i = 0; i < 10; i++) {
 
       stream.on('finish', () => {
         stream.close();
-        console.log(urls[i].slice(10, -15));
+        console.log(urls[i].slice(10, -14));
 
         console.log('Image downloaded ');
       });
