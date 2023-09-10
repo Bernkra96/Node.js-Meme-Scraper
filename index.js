@@ -7,8 +7,8 @@ const filename = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'];
 // Crate folter
 
 try {
-  if (!fs.existsSync('./meme')) {
-    fs.mkdirSync('./meme');
+  if (!fs.existsSync('./memes')) {
+    fs.mkdirSync('./memes');
   }
 } catch {}
 // Fetch Links
@@ -23,7 +23,7 @@ const urls = body.match(re);
 for (let i = 0; i < 10; i++) {
   https
     .get(urls[i].slice(10, -15), (res) => {
-      const imagePath = './meme/' + filename[i] + '.jpg';
+      const imagePath = './memes/' + filename[i] + '.jpg';
       const stream = fs.createWriteStream(imagePath);
 
       res.pipe(stream);
