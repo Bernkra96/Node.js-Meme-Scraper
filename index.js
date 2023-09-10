@@ -19,7 +19,7 @@ const body = await response.text();
 const re = /<img.*\/>/gm;
 const urls = body.match(re);
 const sliceFront = 10;
-const sliceBack = -4;
+const sliceBack = -14;
 
 console.log(urls[0]);
 
