@@ -21,7 +21,10 @@ const urls = body.match(re);
 const sliceFront = 10;
 const sliceBack = -14;
 
+console.log(urls);
+
 console.log(urls[0]);
+console.log(urls[0].slice(sliceFront, sliceBack));
 
 // Downloaded Image from URl
 for (let i = 0; i < 10; i++) {
